@@ -1,0 +1,380 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    color: whitesmoke;
+}
+
+.active:hover{
+    background-color: coral;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+.navbar{
+    color: whitesmoke;
+    background-color: rgb(37, 47, 65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar h1 a{
+    font-family: monospace, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    color: whitesmoke;
+}
+
+.navlink{
+    display: flex;
+    align-items: center;
+}
+
+.navlink li{
+    margin: 0 20px;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iklan{
+    width: 100%;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.prodHead{
+    width: 100%;
+    height: 60vh;
+    background-image: url(/images/lineup.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.prodHead h1{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.dealHead{
+    width: 100%;
+    height: 60vh;
+    background: url(/images/dealer.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.dealHead h1{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: coral;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.ctn:hover{
+    background-color: rgb(66, 186, 229);
+}
+
+section{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    margin-bottom: 40px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row .col img{
+    width: 80%;
+}
+
+.prodDetail .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    margin: 20px auto;
+}
+
+p{
+    padding: 0px 40px;
+}
+
+.prodDetail .ctn{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.prodView .prodV{
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.prodView .prodV img{
+    width: 80%;
+}
+
+.prodView .ctn{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.prodCtn .prodView{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dealer{
+    width: 100%;
+    height: 80vh;
+    margin: 0px;
+    background-image: url(/images/dealer1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dealCtn{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 0px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.dealCtn h1{
+    font-size: 7vmin;
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+.dealCtn p{
+    color: whitesmoke;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.dealCtn .ctn{
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+
+.dealWhere .dealW{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    background-color:  rgba(37, 47, 65, 0.918);
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.dealWhere .dealW:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.dealW h4{
+    color: whitesmoke;
+}
+
+.dealW .ctn{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+
+.dealW p{
+    color: whitesmoke;
+    text-align: start;
+    padding: 5px;
+}
+
+.dealFind .dealWhere{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: rgb(37, 47, 65);
+    text-align: center;
+}
+
+.footer h4{
+    color: whitesmoke;
+    margin: 0;
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+.footer h6{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: -60px;
+    margin-bottom: 12px;
+}
+
+.footer .social{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    margin-top: 50px;
+}
+
+.social a:hover{
+    color: coral;
+}
+
+.ctnForm{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    text-align: center;
+    color: rgb(37, 47, 65);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: rgba(196, 196, 196, 0.3);
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+form button{
+    padding: 15px;
+    background: coral;
+    color: whitesmoke;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+form button:hover{
+    background: rgb(66, 186, 229);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col{
+        margin: 20px auto;
+    }
+
+    .col img{
+        max-width: 90%;
+    }
+}
